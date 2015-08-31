@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DF5EA97-4F29-4748-B928-010CF83C606D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facebook.Client</RootNamespace>
+    <AssemblyName>Facebook.Client</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\Debug\WindowsUWP\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WINDOWS_UNIVERSAL;WINDOWS;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\Bin\Debug\WindowsUWP\Facebook.Client.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\Release\WindowsUWP\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UNIVERSAL;WINDOWS;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\Bin\Release\WindowsUWP\Facebook.Client.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+    <None Include="SharedKey.snk" />
+    <PRIResource Include="Strings\es\Resources.resw" />
+    <PRIResource Include="Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Facebook.Client\AccessTokenData.cs">
+      <Link>AccessTokenData.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\AppAuthenticationHelper.cs">
+      <Link>AppAuthenticationHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\AppLink.cs">
+      <Link>AppLink.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\AppLinkNavigation.cs">
+      <Link>AppLinkNavigation.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\AppLinkResolver.cs">
+      <Link>AppLinkResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\BooleanToVisibilityConverter.cs">
+      <Link>Controls\Converters\BooleanToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\ColorLuminosityConverter.cs">
+      <Link>Controls\Converters\ColorLuminosityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\HlsColor.cs">
+      <Link>Controls\Converters\HlsColor.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\IsNullOrEmptyConverter.cs">
+      <Link>Controls\Converters\IsNullOrEmptyConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\ParameterizedConverter.cs">
+      <Link>Controls\Converters\ParameterizedConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Converters\ScaleConverter.cs">
+      <Link>Controls\Converters\ScaleConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\DataItemRetrievedEventArgs.cs">
+      <Link>Controls\DataItemRetrievedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\DataReadyEventArgs.cs">
+      <Link>Controls\DataReadyEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Extensions\EventExtensions.cs">
+      <Link>Controls\Extensions\EventExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\FriendPicker\FriendPickerDesignSupport.cs">
+      <Link>Controls\FriendPicker\FriendPickerDesignSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\FriendPicker\FriendPickerDisplayOrder.cs">
+      <Link>Controls\FriendPicker\FriendPickerDisplayOrder.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\FriendPicker\FriendPickerItem.cs">
+      <Link>Controls\FriendPicker\FriendPickerItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\FriendPicker\FriendPickerSortOrder.cs">
+      <Link>Controls\FriendPicker\FriendPickerSortOrder.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoadFailedEventArgs.cs">
+      <Link>Controls\LoadFailedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\Audience.cs">
+      <Link>Controls\LoginButton\Audience.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\AuthenticationErrorEventArgs.cs">
+      <Link>Controls\LoginButton\AuthenticationErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\FacebookSessionState.cs">
+      <Link>Controls\LoginButton\FacebookSessionState.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\LoginButton.cs">
+      <Link>Controls\LoginButton\LoginButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\SessionStateChangedEventArgs.cs">
+      <Link>Controls\LoginButton\SessionStateChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\LoginButton\UserInfoChangedEventArgs.cs">
+      <Link>Controls\LoginButton\UserInfoChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Picker\AlphaKeyGroup.cs">
+      <Link>Controls\Picker\AlphaKeyGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Picker\PickerItem.cs">
+      <Link>Controls\Picker\PickerItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\Picker\PickerSelectionMode.cs">
+      <Link>Controls\Picker\PickerSelectionMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\PlacePicker\LocationCoordinate.cs">
+      <Link>Controls\PlacePicker\LocationCoordinate.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\PlacePicker\PlacePicker.cs">
+      <Link>Controls\PlacePicker\PlacePicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\PlacePicker\PlacePickerDesignSupport.cs">
+      <Link>Controls\PlacePicker\PlacePickerDesignSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\ProfilePicture\CropMode.cs">
+      <Link>Controls\ProfilePicture\CropMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\ProfilePicture\ProfilePicture.cs">
+      <Link>Controls\ProfilePicture\ProfilePicture.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Controls\WebDialog\WebDialogUserControl.xaml.cs">
+      <Link>Controls\WebDialog\WebDialogUserControl.xaml.cs</Link>
+      <DependentUpon>WebDialogUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\Facebook.Client\FacebookAppLinkResolver.cs">
+      <Link>FacebookAppLinkResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\FacebookDialog.cs">
+      <Link>FacebookDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\FacebookSessionCacheProvider.cs">
+      <Link>FacebookSessionCacheProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\FacebookSessionLocalSettingsCacheProvider.cs">
+      <Link>FacebookSessionLocalSettingsCacheProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\FacebookUriMapper.cs">
+      <Link>FacebookUriMapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\GraphLocation.cs">
+      <Link>GraphLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\GraphObject.cs">
+      <Link>GraphObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\GraphPlace.cs">
+      <Link>GraphPlace.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\GraphUser.cs">
+      <Link>GraphUser.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\LifecycleHelper.cs">
+      <Link>LifecycleHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Session.cs">
+      <Link>Session.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\Converters\PickerSelectionModeConverter.cs">
+      <Link>Controls\Converters\PickerSelectionModeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\Converters\SizeToGridCellConverter.cs">
+      <Link>Controls\Converters\SizeToGridCellConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\FriendPicker\FriendPicker.cs">
+      <Link>Controls\FriendPicker\FriendPicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\FriendPicker\FriendPickerGroupTemplateSelector.cs">
+      <Link>Controls\FriendPicker\FriendPickerGroupTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\FriendPicker\SortedLocaleGrouping.cs">
+      <Link>Controls\FriendPicker\SortedLocaleGrouping.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\Picker\GroupTemplateSelector.cs">
+      <Link>Controls\Picker\GroupTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\Universal\Controls\Picker\Picker.cs">
+      <Link>Controls\Picker\Picker.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook.Client\WebviewAuthentication.cs">
+      <Link>WebviewAuthentication.cs</Link>
+    </Compile>
+    <Compile Include="FacebookDialogPage.xaml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Images\fb_blank_place_profile_square.png" />
+    <Content Include="Images\fb_blank_profile_portrait.png" />
+    <Content Include="Images\fb_blank_profile_square.png" />
+    <Content Include="Properties\Facebook.Client_UWA.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\FriendPicker\FriendPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\LoginButton\LoginButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PlacePicker\PlacePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProfilePicture\ProfilePicture.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\WebDialog\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\WebDialog\WebDialogUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FacebookDialogPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SharedKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
